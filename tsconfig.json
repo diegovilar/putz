@@ -1,0 +1,16 @@
+{
+    "compilerOptions": {
+        "target": "ES5",
+        "module": "commonjs",
+        "noEmitOnError": true,
+        "noImplicitAny": true,
+        "preserveConstEnums": true,
+        "removeComments": false,
+        "declaration": false,
+        "sourceMap": false,
+        "experimentalDecorators": true
+    },
+    "files": [        
+        "./src/main.ts"
+    ]
+}
