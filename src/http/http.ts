@@ -32,7 +32,7 @@ export class HttpError extends NetworkError {
                 return new HttpUnsurpportedMediaTypeError(message);
             case 500:
                 return new HttpInternalServerError(message);
-            case 500:
+            case 501:
                 return new HttpNotImplementedError(message);
         }
 
