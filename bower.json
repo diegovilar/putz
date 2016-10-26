@@ -1,6 +1,6 @@
 {
   "name": "putz",
-  "version": "0.8.0",
+  "version": "0.8.1",
   "description": "Error library for TypeScript",
   "ignore": [],
   "devDependencies": {    
