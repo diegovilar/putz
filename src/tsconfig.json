@@ -1,0 +1,21 @@
+{
+    "compilerOptions": {
+        "target": "es5",
+        "module": "commonjs",
+        "moduleResolution": "node",
+        "noImplicitAny": true,
+        "noEmitOnError": true,
+        "declaration": true,
+        "stripInternal": false,
+        "suppressImplicitAnyIndexErrors": false,
+        "experimentalDecorators": true,
+        "sourceMap": true,
+        "newLine": "LF",
+        "charset": "utf-8",
+        "emitBOM": false,
+        "lib": [
+            "dom",
+            "es5"
+        ]
+    }
+}

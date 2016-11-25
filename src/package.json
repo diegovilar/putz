@@ -1,25 +1,19 @@
 {
     "name": "putz",
-    "version": "1.0.0-alpha.1",
+    "version": "0.0.0-PLACEHOLDER",
     "description": "Error library for TypeScript",
     "license": "MIT",
     "author": "Diego Vilar <diegovilar@gmail.com>",
     "homepage": "https://github.com/diegovilar/putz",
     "bugs": "https://github.com/diegovilar/putz/issues",
     "main": "src/index.js",
+    "module": "src/index.js",
+    "typings": "src/index.d.ts",
     "repository": {
         "type": "git",
         "url": "https://github.com/diegovilar/putz.git"
     },
-    "scripts": {
-        "build": "build.sh",
-        "watch": "node_modules/.bin/tsc -w -p src/tsconfig.json --outDir debug/src"
-    },
-    "devDependencies": {
-        "rollup": "^0.36.3",
-        "rollup-plugin-commonjs": "^5.0.5",
-        "rollup-plugin-sourcemaps": "^0.4.1",
-        "typescript": "^2.1.1",
-        "uglifyjs": "^2.4.10"
+    "peerDependencies": {
+        "typescript": ">=2.x.x"
     }
 }

@@ -4,13 +4,13 @@ export class HttpError extends NetworkError {
     name = 'HttpError';
     statusCode: number;
 
-    constructor(statusCode: number, message?: string) {
+    constructor(statusCode?: number, message?: string) {
         super(message);
         this.statusCode = Number(statusCode) || 0;
     }
 
     static createFromStatusCode(statusCode: number, message?: string): HttpError {
-        
+
         switch (statusCode) {
             case 400:
                 return new HttpBadRequestError(message);
@@ -34,9 +34,9 @@ export class HttpError extends NetworkError {
                 return new HttpInternalServerError(message);
             case 501:
                 return new HttpNotImplementedError(message);
+            default:
+                return new HttpError(statusCode, message);
         }
-
-        return new HttpError(statusCode, message);
 
     }
 }
